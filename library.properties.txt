@@ -1,0 +1,9 @@
+name=SteerBot_TB6612
+version=0.9
+author=J. Flores
+maintainer=monolocoss88@gmail.com
+sentence=A library for controlling differential steering robots using the TB6612 motor driver.
+paragraph=SteerBot_TB6612 simplifies the control of differential steering robots with various functions for simple movement commands.
+category=Device Control
+url=https://github.com/JFlores88/SteerBot_TB6612
+architectures=*
