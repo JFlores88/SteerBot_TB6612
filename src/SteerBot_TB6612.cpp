@@ -26,6 +26,21 @@ BIN1=tempAIN1;
 BIN2=tempAIN2;
 }
 
+void InvertMotor(bool motor) //if the bool is false/0 then it's motor A, otherwise it inverts motor B
+{
+  if(motor){
+    int tempIN1=AIN1;
+    AIN1=AIN2;
+    AIN2=tempIN1;
+  }
+  else{
+    int tempIN1=BIN1;
+    BIN1=BIN2;
+    BIN2=tempIN1;    
+  }
+  
+}
+
 void SteerBot_TB6612::Forward(int t, int speedA, int speedB) {
   analogWrite(ENA, speedA);
   analogWrite(ENB, speedB);
