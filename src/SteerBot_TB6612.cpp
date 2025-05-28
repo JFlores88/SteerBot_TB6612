@@ -11,6 +11,21 @@ SteerBot_TB6612::SteerBot_TB6612(int ENA_pin, int ENB_pin, int AIN1_pin, int AIN
   speed = default_speed;
 }
 
+void SteerBot_TB6612::SwapMotors() {
+ //Saves pins for motor A
+int tempENA=ENA;
+int tempAIN1=AIN1;
+int tempAIN2=AIN2;
+ //Changes pins from motor A to be the ones on B
+ENA=ENB;
+AIN1=BIN1;
+AIN2=BIN2;
+ //Uses saved pins to make motor B the ones from A originally
+ENB=tempENA;
+BIN1=tempAIN1;
+BIN2=tempAIN2;
+}
+
 void SteerBot_TB6612::Forward(int t, int speedA, int speedB) {
   analogWrite(ENA, speedA);
   analogWrite(ENB, speedB);

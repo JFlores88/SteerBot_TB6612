@@ -6,6 +6,7 @@
 class SteerBot_TB6612 {
   public:
     SteerBot_TB6612(int ENA_pin, int ENB_pin, int AIN1_pin, int AIN2_pin, int BIN1_pin, int BIN2_pin, int default_speed); // Constructor
+    void SwapMotors();
     void Forward(int t, int speedA, int speedB);
     void Forward(int t);
     void Backward(int t, int speedA, int speedB);

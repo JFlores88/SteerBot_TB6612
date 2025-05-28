@@ -3,7 +3,8 @@ This library was designed to control the movement of a 2 wheeled diferential rob
 While there's no reason it wouldn't work in any other context, this library was specifically made for bumperbot robots
 
 The functions included in the library are:
-
+    SwapMotors();
+    
     Forward(int t, int speedA, int speedB);
     Forward(int t);
 
