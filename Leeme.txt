@@ -1,9 +1,9 @@
 Esta librería está diseñada para controlar un robot (especificamente diseñada para bumperbot) por medio de un driver TB6612
 
 A la hora de declarar la librería
-1.- Añadir la libreria " #include<Bumpermovements.h>"
+1.- Añadir la libreria " #include <SteerBot_TB6612.h> "
 2.- Declarar el objeto de la clase Bumpermovements
-	Bumpermovements TuRobot(ENA, ENB, AIN1, AIN2, BIN1, BIN2, speed);
+	SteerBot_TB6612 TuRobot(ENA, ENB, AIN1, AIN2, BIN1, BIN2, speed);
 
 3.- A la hora de utilizar alguna de las funciones se llaman por:
 	TuRobot.Nombredefunción(variablesdefuncion)
